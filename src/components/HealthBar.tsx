@@ -1,8 +1,8 @@
 import { Dimensions, StyleSheet, View, Text, Pressable, ImageBackground } from "react-native";
-import { AnimatedCircularProgress } from "react-native-circular-progress";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { AnimatedCircularProgress } from "react-native-circular-progress";
 const { width, height } = Dimensions.get("window");
 
 const HealthBar = ({navigation}:any) => {
@@ -70,15 +70,24 @@ const HealthBar = ({navigation}:any) => {
           size={60}
           width={10}
           fill={50}
-          tintColor="#BF40BF"
+          tintColor="#806BDA"
           onAnimationComplete={() => console.log("onAnimationComplete")}
           backgroundColor="#fff"
           rotation={360}
-          lineCap={"round"}
+          lineCap={"butt"}
+          fillLineCap='butt'
+          prefill={80}
+          children={() => {
+            return (
+              <View><Text style={{fontSize:16, fontWeight:'600', color:'white'}}>50%</Text></View>
+            )
+          }}
+/>
+  
 
-          
-          
-        />
+
+
+
       </View>
 
       

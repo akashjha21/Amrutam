@@ -29,7 +29,7 @@ const HomeScreen = ({ navigation }: any) => {
     bottomSheetRef.current?.close();
     console.log("Touch Kiya");
   };
-  const [show, setShow] = useState<boolean>(false)
+  const [show, setShow] = useState<boolean>(true)
 
   return (
     <>

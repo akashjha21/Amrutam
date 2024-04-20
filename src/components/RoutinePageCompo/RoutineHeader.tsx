@@ -7,7 +7,7 @@ import ButtonGreen from "../../helpers/ButtonGreen";
 const { width, height } = Dimensions.get("window");
 
 const RoutineHeader = ({ navigation }: any) => {
-  const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
+  const [isModalVisible, setIsModalVisible] = useState<boolean>(true);
   return (
     <View style={{ height: "100%", flex: 1, justifyContent: "space-between" }}>
       <View

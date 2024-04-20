@@ -14,13 +14,14 @@ const DialogBox: React.FC<DialogBoxProps> = ({
 }) => {
   return (
     <View>
-      <Modal transparent={true} visible={isModalVisible} >
+      <Modal transparent={true} visible={isModalVisible}>
         <View
           style={{
             flex: 1,
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
+            backgroundColor:'#00000020',
           }}
         >
           <View
@@ -29,6 +30,11 @@ const DialogBox: React.FC<DialogBoxProps> = ({
               width: "90%",
               backgroundColor: "white",
               borderRadius: 20,
+              shadowColor: "#000",
+              shadowOffset: { width: 0, height: 2 },
+              shadowOpacity: 0.5,
+              shadowRadius: 5,
+              elevation: 2,
             }}
           >
             <View
